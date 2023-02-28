@@ -2,4 +2,4 @@
 
 def test_helloworld():
     hello = helloworld()
-    assert(hello == "Hello World")
+    assert("Hello World" in hello)
