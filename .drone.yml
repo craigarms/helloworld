@@ -8,3 +8,9 @@ steps:
     commands:
       - pip install -r requirements.txt
       - pytest
+
+  - name: Update Production server
+    image: curlimages/curl
+    commands:
+      - curl http://192.168.65.128:5000/webhook
+    
